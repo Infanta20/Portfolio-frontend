@@ -21,5 +21,5 @@ export const projectAPI = {
   createProject: (data) => api.post('/projects', data),
   updateProject: (id, data) => api.put(`/projects/${id}`, data),
   deleteProject: (id, data) => api.delete(`/projects/${id}`, { data }),
-  likeProject: (id) => api.post(`/projects/${id}/like`)
+ likeProject: (id, data) => api.post(`/projects/${id}/like`, data)
 };
