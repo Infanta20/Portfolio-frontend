@@ -12,7 +12,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="container mx-auto p-8">
+    <div className="container mx-auto p-8 justify-center items-center flex flex-col">
       <h1 className="text-4xl font-bold mb-8">Contact Me</h1>
       {submitted && <p className="text-green-600 mb-4">Thank you! I'll get back to you soon.</p>}
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg max-w-lg">
